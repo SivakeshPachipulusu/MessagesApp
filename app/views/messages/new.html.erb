@@ -1,0 +1,22 @@
+
+  <%= form_for @messages do |m|%>
+	<%= m.label "Message Name" %>
+	<%= m.text_field "m_name"%><br>
+	<%= m.label "Message Subject" %>
+	<%= m.text_field "m_subject"%><br>
+	<%= m.label "Message Description" %>
+	<%= m.text_area "m_description"%><br>
+	<%= m.submit%>
+<%end%> 
+
+<!-- <form class="new_message" id="new_message" action="/messages" accept-charset="UTF-8" method="post"><input name="utf8" value="&#x2713;" />
+	<label for="message_Message Name">Message name</label>
+	<input type="text" name="message[m_name]" id="message_m_name" /><br>
+	<label for="message_Message Subject">Message subject</label>
+	<input type="text" name="message[m_subject]" id="message_m_subject" /><br>
+	<label for="message_Message Description">Message description</label>
+	<textarea name="message[m_description]" id="message_m_description">
+</textarea><br>
+	<input type="submit" name="commit" value="Create Message" />
+</form> 
+ -->
